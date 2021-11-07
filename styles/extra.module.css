@@ -1,0 +1,27 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgb(29, 28, 28);
+  z-index: 50;
+}
+
+.title {
+  font-size: xx-large;
+  padding-left: 2rem;
+}
+
+.list {
+  color: white;
+  display: flex;
+  padding-right: 2rem;
+  list-style-type: none;
+}
+
+.listitem{
+    padding-left: 1rem;
+    cursor: pointer;
+}
