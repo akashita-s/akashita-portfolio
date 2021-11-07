@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Basic from "../src/components/Basic";
+import Github from "../src/components/Github";
 import Navigation from "../src/components/Navigation";
 import styles from "../styles/Home.module.css";
 
@@ -17,6 +18,8 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <Basic />
       </main>
+
+      <Github />
 
       <footer className={styles.footer}>
         <a

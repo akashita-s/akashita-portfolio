@@ -9,6 +9,19 @@
   z-index: 50;
 }
 
+.gitcontainer{
+    margin: 4rem;
+    width: 100%;
+}
+
+.git{
+    color: white;
+}
+.gitbox{
+    padding: 4rem;
+    display: flex;
+    justify-content: center
+}
 .title {
   font-size: xx-large;
   padding-left: 2rem;

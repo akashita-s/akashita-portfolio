@@ -17,6 +17,7 @@ function Basic() {
   ];
 
   return (
+    
     <div className={styles.container}>
       <motion.div
         initial={{ x: -600 }}
