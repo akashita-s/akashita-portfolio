@@ -1,4 +1,3 @@
-import { withRouter } from "next/router";
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import styles from "../../styles/extra.module.css";
@@ -28,7 +27,6 @@ const labels = {
     "Sat",
   ],
   totalCount: "{{count}} contributions in {{year}}",
-  color: "white",
   legend: {
     less: "Less",
     more: "More",

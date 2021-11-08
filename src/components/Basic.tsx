@@ -17,7 +17,6 @@ function Basic() {
   ];
 
   return (
-    
     <div className={styles.container}>
       <motion.div
         initial={{ x: -600 }}
@@ -28,8 +27,8 @@ function Basic() {
       >
         <h1>Akashita Sahu</h1>
         <h3>
-          Frontend Developer working in Banglore based company. I am dedicated towards
-          building unique projects and cool user experiences.
+          Frontend Developer working in Banglore based company. <br />I am
+          dedicated towards building unique projects and cool user experiences.
         </h3>
         <div className={styles.links}>
           {data.map((item) => (

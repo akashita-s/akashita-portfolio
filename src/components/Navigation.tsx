@@ -1,5 +1,7 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import styles from "../../styles/extra.module.css";
+import { changeStep } from "../features/step";
 
 const data = [
   { key: 0, name: "Home" },
@@ -9,11 +11,14 @@ const data = [
 ];
 
 function Navigation() {
+
+  const dispatch = useDispatch();
+
   return (
     <div className={styles.navigation}>
       <h1 className={styles.title}>AS.</h1>
       <ul className={styles.list}>
-          {data.map((item) => (<li className={styles.listitem} key={item.key}>{item.name}</li>))}
+          {data.map((item) => (<li className={styles.listitem} onClick={() => {dispatch(changeStep(item.name))}} key={item.key}>{item.name}</li>))}
       </ul>
     </div>
   );

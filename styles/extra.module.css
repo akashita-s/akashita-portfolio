@@ -6,26 +6,58 @@
   position: sticky;
   top: 0;
   background-color: rgb(29, 28, 28);
-  z-index: 50;
 }
 
 .gitcontainer{
-    margin: 4rem;
-    width: 100%;
+    margin: 5%;
+    width: 90%;
+    margin-bottom: 10rem;
 }
 
 .git{
     color: white;
 }
 .gitbox{
-    padding: 4rem;
+    padding-top: 4rem;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
+
+.iconbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    width: 6rem;
+    height: 7rem;
+}
+
+.iconcontainer{
+    display: flex;
+    height: 10rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.iconbox:hover{
+    border-color: white;
+    background-color: gray;
+    border-width: 2px;
+    border-style: solid;
+    width: 6.2rem;
+    height: 7.2rem;
+}
+
 .title {
   font-size: xx-large;
   padding-left: 2rem;
 }
+
 
 .list {
   color: white;
@@ -37,4 +69,10 @@
 .listitem{
     padding-left: 1rem;
     cursor: pointer;
+}
+.listitem:hover{
+    font-weight: 500;
+}
+.listitem:active{
+    font-weight: 700;
 }
