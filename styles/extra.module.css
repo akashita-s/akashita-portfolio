@@ -9,7 +9,6 @@
 }
 
 .gitcontainer{
-    margin: 5%;
     width: 90%;
     margin-bottom: 10rem;
 }
@@ -71,8 +70,12 @@
     cursor: pointer;
 }
 .listitem:hover{
-    font-weight: 500;
+    font-weight: bold;
 }
-.listitem:active{
-    font-weight: 700;
+
+.link{
+    cursor: pointer;
+}
+.link:hover{
+font-weight: bold;
 }

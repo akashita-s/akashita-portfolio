@@ -1,0 +1,21 @@
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.link:hover{
+    font-weight: bold;
+}

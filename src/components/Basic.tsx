@@ -11,9 +11,9 @@ function Basic() {
   };
 
   const data = [
-    { key: 0, name: "GitHub |" },
-    { key: 1, name: "LinkedIn |" },
-    { key: 2, name: "Blog" },
+    { key: 0, name: "GitHub |", link: 'https://github.com/akashita-s' },
+    { key: 1, name: "LinkedIn |", link : 'https://www.linkedin.com/in/akashitasahu/' },
+    { key: 2, name: "Blog", link: 'https://aksparksin.blogspot.com/2020/11/views-on-personal-journal.html' },
   ];
 
   return (
@@ -32,7 +32,7 @@ function Basic() {
         </h3>
         <div className={styles.links}>
           {data.map((item) => (
-            <h3 key={item.key}>{item.name}</h3>
+            <h3 onClick={() => {onclicklink(item.link)}} key={item.key}>{item.name}</h3>
           ))}
         </div>
       </motion.div>

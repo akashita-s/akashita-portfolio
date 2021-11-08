@@ -35,7 +35,7 @@ const data2 = [
 function SkillSet() {
   return (
     <div className={styles.gitcontainer}>
-      <h1>My Skill Set</h1>
+      <h1>Professional Skill Set</h1>
       <motion.div
         initial={{ x: -600 }}
         animate={{ x: 0 }}
