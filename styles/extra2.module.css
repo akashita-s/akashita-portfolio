@@ -16,6 +16,15 @@
     margin: 2rem;
 }
 
+.sub{
+    display: flex;
+    height: 8rem;
+}
+
+.card:hover{
+    border-width: 3px;
+}
+
 .link:hover{
     font-weight: bold;
 }

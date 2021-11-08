@@ -1,6 +1,9 @@
 import { useRouter } from "next/router";
 import React from "react";
 import styles from "../../styles/extra2.module.css";
+import { motion } from "framer-motion";
+import { BsColumnsGap } from "react-icons/bs";
+import { IconContext } from "react-icons";
 
 const data = [
   {
@@ -48,13 +51,39 @@ function Projects() {
   };
   const Card = ({ name, tech, description, url, git }: any) => {
     return (
-      <div className={styles.card}>
-        <h1>{name}</h1>
+      <motion.div
+        initial={{ y: 600 }}
+        animate={{ y: 0 }}
+        transition={{
+          duration: "1",
+        }}
+        className={styles.card}
+      >
+        
+          <IconContext.Provider value={{ color: "white", size: "4em" }}>
+            <BsColumnsGap />
+          </IconContext.Provider>
+          <h1>{name}</h1>
+        
         <h3>Tech used : {tech} </h3>
         <h3>{description}</h3>
-        <h3 className={styles.link} onClick={() => {onclicklink(url)}}>Go to URL &#8811;</h3>
-        <h3 className={styles.link} onClick={() => {onclicklink(git)}}>View Git Repo &#8811;</h3>
-      </div>
+        <h3
+          className={styles.link}
+          onClick={() => {
+            onclicklink(url);
+          }}
+        >
+          Go to URL &#8811;
+        </h3>
+        <h3
+          className={styles.link}
+          onClick={() => {
+            onclicklink(git);
+          }}
+        >
+          View Git Repo &#8811;
+        </h3>
+      </motion.div>
     );
   };
   return (
