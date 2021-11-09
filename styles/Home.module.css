@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .footer {
@@ -28,7 +29,7 @@
 .container{
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .image{
@@ -47,6 +48,15 @@
 .particles{
   position: static;
   z-index: -1;
-  opacity: 30%;
+  opacity: 15%;
+}
+
+@media (max-width: 600px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 

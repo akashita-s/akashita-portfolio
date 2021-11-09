@@ -73,7 +73,7 @@ const Home: NextPage = () => {
               width: 0.1,
             },
             collisions: {
-              enable: true,
+              enable: false,
             },
             move: {
               direction: "none",
@@ -88,7 +88,7 @@ const Home: NextPage = () => {
                 enable: true,
                 value_area: 800,
               },
-              value: 80,
+              value: 60,
             },
             opacity: {
               value: 1,
@@ -97,8 +97,8 @@ const Home: NextPage = () => {
               type: "circle",
             },
             size: {
-              random: true,
-              value: 5,
+              random: false,
+              value: 2,
             },
           },
           detectRetina: true,
