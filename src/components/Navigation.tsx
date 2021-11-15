@@ -1,38 +1,28 @@
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
 import styles from "../../styles/extra.module.css";
-import { changeStep } from "../features/step";
+import { TabManager } from "./TabManager";
 
-const data = [
-  { key: 0, name: "Home" },
-  { key: 1, name: "About" },
-  { key: 2, name: "Projects" },
+const TABS = [
+  { label: "Home", value: 1 },
+  { label: "About", value: 2 },
+  { label: "Projects", value: 3 },
 ];
 
 function Navigation() {
-  const dispatch = useDispatch();
   const router = useRouter();
   const onclicklink = (link: string) => {
     router.push(link);
   };
 
+  const [activeTab, handleTab] = useState(1);
+
   return (
     <div className={styles.navigation}>
       <h1 className={styles.title}>AS.</h1>
-      <ul className={styles.list}>
-        {data.map((item) => (
-          <li
-            className={styles.listitem}
-            onClick={() => {
-              dispatch(changeStep(item.name));
-            }}
-            key={item.key}
-          >
-            {item.name}
-          </li>
-        ))}
-        <li
+      <div style={{display: 'flex', overflow: 'hidden'}}>
+        <TabManager tabs={TABS} activeTab={activeTab} handleTab={handleTab} />
+        <div
           className={styles.listitem}
           onClick={() => {
             onclicklink(
@@ -41,8 +31,8 @@ function Navigation() {
           }}
         >
           Resume
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   );
 }

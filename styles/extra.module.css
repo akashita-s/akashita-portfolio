@@ -5,10 +5,8 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  opacity: 97%;
-  background-color: rgb(29, 28, 28);
+  background-color: rgb(29, 28, 28, 0.95);;
 }
-
 
 .gitcontainer {
   width: 90%;
@@ -68,11 +66,13 @@
 }
 
 .listitem {
-  padding-left: 1rem;
+  padding: 6px 28px;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 .listitem:hover {
-  font-weight: bold;
+  background-color: rgba(39, 37, 37, 0.17);
+  color: white;
 }
 
 .link {
@@ -89,7 +89,7 @@
       padding-left: 1rem;
     }
     .listitem {
-      padding-left: 0.5rem;
+      padding: 6px 28px;
       cursor: pointer;
     }
     .iconcontainer {
