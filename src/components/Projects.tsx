@@ -4,6 +4,7 @@ import styles from "../../styles/extra2.module.css";
 import { motion } from "framer-motion";
 import { BsColumnsGap } from "react-icons/bs";
 import { IconContext } from "react-icons";
+import Link from "next/link";
 
 const data = [
   {
@@ -59,22 +60,18 @@ function Projects() {
         }}
         className={styles.card}
       >
-        
-          <IconContext.Provider value={{ color: "white", size: "4em" }}>
-            <BsColumnsGap />
-          </IconContext.Provider>
-          <h1>{name}</h1>
-        
+        <IconContext.Provider value={{ color: "white", size: "4em" }}>
+          <BsColumnsGap />
+        </IconContext.Provider>
+        <h1>{name}</h1>
+
         <h3>Tech used : {tech} </h3>
         <h3>{description}</h3>
-        <h3
-          className={styles.link}
-          onClick={() => {
-            onclicklink(url);
-          }}
-        >
-          Go to URL &#8811;
-        </h3>
+        <Link href={url}>
+          <a target="_blank" className={styles.link}>
+            <h3>Go to URL &#8811;</h3>
+          </a>
+        </Link>
         <h3
           className={styles.link}
           onClick={() => {

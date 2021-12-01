@@ -69,6 +69,7 @@
   padding: 6px 28px;
   cursor: pointer;
   transition: all 0.5s ease;
+  color: rgb(160, 160, 160);
 }
 .listitem:hover {
   background-color: rgba(39, 37, 37, 0.17);
