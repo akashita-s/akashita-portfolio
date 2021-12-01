@@ -1,18 +1,14 @@
-import { useRouter } from "next/router";
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
 import { motion } from "framer-motion";
 
 function Basic() {
-  const router = useRouter();
-  const onclicklink = (link: string) => {
-    router.push(link);
-  };
-
+ 
   const data = [
-    { key: 0, name: "GitHub |", link: 'https://github.com/akashita-s' },
-    { key: 1, name: "LinkedIn |", link : 'https://www.linkedin.com/in/akashitasahu/' },
+    { key: 0, name: "GitHub | ", link: 'https://github.com/akashita-s' },
+    { key: 1, name: "LinkedIn | ", link : 'https://www.linkedin.com/in/akashitasahu/' },
     { key: 2, name: "Blog", link: 'https://aksparksin.blogspot.com/2020/11/views-on-personal-journal.html' },
   ];
 
@@ -32,7 +28,11 @@ function Basic() {
         </h3>
         <div className={styles.links}>
           {data.map((item) => (
-            <h3 onClick={() => {onclicklink(item.link)}} key={item.key}>{item.name}</h3>
+            <Link href={item.link} key={item.key}>
+            <a target="_blank" className={styles.link}>
+              <h3 style={{marginRight: '5px'}}>{item.name}</h3>
+            </a>
+          </Link>
           ))}
         </div>
       </motion.div>
