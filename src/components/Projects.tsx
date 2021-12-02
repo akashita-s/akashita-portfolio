@@ -37,11 +37,11 @@ const data = [
   },
   {
     key: 3,
-    name: "Cake Delivery App",
-    tech: "React-native , CSS, Android studio",
-    description: "A mobile app to sell bakery items.",
-    url: "https://github.com/akashita-s/cake-delivery-app",
-    git: "https://github.com/akashita-s/cake-delivery-app",
+    name: "Three js Project ",
+    tech: "React , CSS, Redux, Three.js, react-spring",
+    description: "A demo app to demonstrate 3D figures and customize their coordinates and color.",
+    url: "https://threejsakashita.netlify.app/",
+    git: "https://github.com/akashita-s/three-boxes",
   },
 ];
 
