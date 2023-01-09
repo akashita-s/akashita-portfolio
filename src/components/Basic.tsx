@@ -23,7 +23,7 @@ function Basic() {
       >
         <h1>Akashita Sahu</h1>
         <h3>
-          Frontend Developer working in Banglore based company. <br />I am
+          Frontend Developer working in a Health Tech company in Bangalore. <br />I am
           dedicated towards building unique projects and cool user experiences.
         </h3>
         <div className={styles.links}>
