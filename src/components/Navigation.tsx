@@ -26,7 +26,7 @@ function Navigation() {
           className={styles.listitem}
           onClick={() => {
             onclicklink(
-              "https://drive.google.com/file/d/19-OCj7saqcX63GYw3KoSi7UBZG3w_W-L/view?usp=sharing"
+              "https://drive.google.com/file/d/1U29DrYXpkIGUKLP86K1ft9ytSdaIIatR/view?usp=sharing"
             );
           }}
         >
