@@ -12,12 +12,12 @@ function Step() {
     return (
       <React.Fragment>
         <SkillSet />
-        <Github />
+        {/* <Github /> */}
         <h1>
-          When I am not working I am usually busy completing reading challenges
+          When I am not working, I am usually busy completing reading challenges
           on GoodReads. Also I sometimes involve myself in painting.
         </h1>
-        <h3 className={styles.link}>Some of my work &#8811;</h3>
+        {/* <h3 className={styles.link}>Some of my work &#8811;</h3> */}
       </React.Fragment>
     );
   else if (currentStep == "Projects") return <Projects />;

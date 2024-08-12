@@ -9,7 +9,7 @@ function Basic() {
   const data = [
     { key: 0, name: "GitHub | ", link: 'https://github.com/akashita-s' },
     { key: 1, name: "LinkedIn | ", link : 'https://www.linkedin.com/in/akashitasahu/' },
-    { key: 2, name: "Blog", link: 'https://aksparksin.blogspot.com/2020/11/views-on-personal-journal.html' },
+    { key: 2, name: "E-mail", link: 'mailto:akashitasahu@gmail.com' },
   ];
 
   return (
@@ -44,7 +44,7 @@ function Basic() {
         }}
         className={styles.image}
       >
-        <Image alt="img" src={"/coder.jpeg"} width={300} height={300} />
+        <Image alt="img" src={"/computer-icon.png"} width={300} height={300} />
       </motion.div>
     </div>
   );
